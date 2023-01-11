@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link rel="stylesheet" href="dist/css/output.css">
+
+</head>
+<body>
+<div>
+    <div class="sticky top-0 z-50">
+        <nav class="absolute navbar transparent-nav bg-nav left-0 right-0 z-10 text-white">
+            <div class="w-9/12 mx-auto py-5 flex justify-between items-center font-Montserrat">
+                <div>
+                    <a href="" class="text-lg">TailListing</a>
+                </div>
+                <div>
+                    <button class="py-2 px-4 rounded-md border border-amber-500 text-amber-500 bg-transparent hover:bg-amber-500 hover:text-white transition-all">
+                        Add Listing
+                    </button>
+                </div>
+                <div class="space-x-4">
+                   <button class="text-lg">Sign In</button>
+                   <button class="text-lg">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+
+    <div class="relative h-screen hero-banner">
+        <img src="src/assets/images/hero/hero_4.jpg" alt="" class="h-full w-full object-cover">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute h-full w-full inset-0">
+            <div class="flex min-h-full w-full items-center justify-center">
+                <div>
+                    <div class="text-white text-center hero-header">
+                        <p class="text-4xl font-bold mb-4">Discover Places That People Love</p>
+                        <p class="text-lg text-gray-300">We will help you find the best places in the world</p>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-5 mb-5">
+                        <div>
+                            <input type="text" placeholder="Location" class="rounded-md w-80 bg-white text-gray-600 px-4 py-3 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="I'm looking for..." class="rounded-md w-80 bg-white text-gray-600 px-4 py-3 focus:outline-none">
+                        </div>
+                        <div>
+                            <button class="rounded-md py-2.5 px-4 bg-amber-500 text-white text-lg hover:bg-amber-600"><span class="material-symbols-outlined align align-middle mr-1">search</span>Search</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="flex gap-5 justify-center text-sm text-white">
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-symbols-outlined align-middle ">restaurant_menu</span>
+                                    Restuarants
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-symbols-outlined align-middle ">local_cafe</span>
+                                    Cafe
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500 ">
+                                    <span class="material-symbols-outlined align-middle ">fitness_center</span>
+                                    Gym
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-symbols-outlined align-middle ">medication</span>
+                                    Hospitals
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-symbols-outlined align-middle ">school</span>
+                                    Schools
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-symbols-outlined align-middle ">shopping_cart</span>
+                                    Shopping
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>                   
+    </div>
+
+
+    <div>
+        <div class="bg-gray-50 py-32">
+            <div class="w-9/12 mx-auto">        
+                <div class="text-center mb-12 text-gray-600">
+                    <p class="text-5xl font-bold mb-3 ">Popular Places</p>
+                    <p>Discover Most Searched Places</p>
+                </div>
+                <div class="grid grid-cols-3 gap-6 mx-auto">
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/DOCCCC.png" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">30595 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Dr. Karishma Verma Clinic</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Jhansi, U.P</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Clinic</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Hospital</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/81782419-mobile-phone-repair-at-service-center-smartphone-dissasembling-and-diagnostic-repairman-workplace-to.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Debu Mobile Repair</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Nalwalgarh, Rajasthan</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Expert</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Jugaadu</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/20210221-KXCoffeeGym29.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Champ Gym</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Agra, U.P</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Trainer</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Pro</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">5 days a Weed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/photo-1556035511-3168381ea4d4.jpeg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">30595 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Club Jackson</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Bikaner, Rajasthan</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Dance</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Passion</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/Screenshot_2020-02-02-00-13-20-283_com.instagram.android.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">UT Bakery</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Lucknow, U.P</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Bakery</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Fresh</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/1x1-besan-ki-sev-namkeen.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Ram ji ke khaste</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Orai, U.P</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Snacks</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Pigga</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/big_missi_rotis-7385.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Mishi</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Lucknow, U.P</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Pan-India</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Best in Class</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div class="h-48 overflow-hidden">
+                            <img src="src/assets/images/1076692.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Cafe Parmar</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Valsad, Gujarat</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Premium</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Fresh</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-md shadow max-w-xl overflow-hidden">
+                        <div>
+                            <img src="src/assets/images/istockphoto-931308812-612x612.jpg" alt="">
+                        </div>
+                        <div class="px-6 py-4 space-y-2">
+                            <div class="flex text-sm items-center ">
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">grade</span>
+                                <span class="material-symbols-sharp text-amber-400">star_half</span>
+                                <span class="ml-2 text-xs text-gray-600">294 Reviews</span>
+                            </div>
+                            <p class="text-lg font-bold text-gray-600">Kittu's Joint</p>
+                            <p class="text-sm text-gray-600"><span class="material-symbols-outlined align-middle -ml-1">location_on</span>Jaipur, Rajasthan</p>
+                            <div class="flex space-x-0.5">
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Clinic</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">Hospital</span>
+                                <span class="text-xs px-2 py-0.5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <button class="rounded-md px-6 py-2 bg-white border border-gray-100 shadow hover:shadow-lg text-gray-600 ">
+                        🚀 Discover More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="bg-sky-50 py-32">
+        <div class="w-9/12 mx-auto">        
+            <div class="text-center mb-12 text-gray-600 pt-32">
+                <p class="text-5xl font-bold mb-3 ">Discover by Categories</p>
+                <p class="text-gray-600">Discover Places by Categories</p>
+            </div>
+            <div class="w-9/12 grid grid-cols-4 gap-10 mx-auto">
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/566024_coffee_cafe_cup_drink_espresso_icon.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Coffee & Tea</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/531911_camera_device_entertainment_film_media_icon.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Entertainment</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/hotel.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Hotels and Travel</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/school.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Education</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/health.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Health & Medicine</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/home.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Home service</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/shopping.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Shopping</p>
+                    </div>
+                </a>
+                <a href="" class="p-4 w-48 shadow hover:shadow-md bg-white space-y-5 rounded-lg">
+                    <img src="src/assets/images/icons/automotive.png" class="h-32 w-32 mx-auto" alt="">
+                    <div class="text-center space-y-2">
+                        <p class="text-gray-700 text-lg mb-3">Automobile</p>
+                    </div>
+                </a>
+            </div>
+            <div class="mt-12 text-center">
+                <button class="rounded-md px-6 py-2 bg-white border border-gray-100 shadow hover:shadow-lg text-gray-600 ">
+                    🎈 Discover More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-slate-100 pt-32">
+        <div class="w-9/12 mx-auto">        
+            <div class="text-center mb-12 text-gray-600 pt-32">
+                <p class="text-4xl font-bold mb-3 ">Collections</p>
+                <p class="text-gray-600">Discover List of Top Places by Collections</p>
+            </div>
+            <div class="grid grid-cols-4 gap-4 place-items-center">
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/dental 1.jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Newly Opened</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (5).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Traditional Restaurants</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (1).jpeg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Trending this week</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (2).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Luxury Houses</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (4).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Newly Opened</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (7).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Cheap in Town</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (6).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Newly Opened</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+                <div class=" relative h-64 w-56 overflow-hidden">
+                    <img src="src/assets/images/res-pic (3).jpg" alt="" class="rounded h-full w-full object-cover">
+                    <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                    <div class="absolute bottom-2 left-3">
+                        <p class="text-white text-lg text-semibold">Newly Opened</p>
+                        <p class="text-white text-sm">21 Places</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <button class="rounded-md px-6 py-2 bg-white border border-gray-100 shadow hover:shadow-lg text-gray-600 ">
+                    🎁 Discover More
+                </button>
+            </div>
+    </div>
+
+
+    <div class="bg-gray-50 py-36 relative">
+        <div class="w-9/12 mx-auto">
+            <div class="flex gap-6 items-center">
+                <div class="w-1/2">
+                    <div class="food w-1/2 absolute opacity-30 h-full top-0 bottom-0 left-0"></div>
+                    <div class="w-1/2 absolute bg-gradient-to-l from-gray-50 via-transparent to-transparent top-0 bottom-0 left-0"></div>
+                    <div class="flex gap-12">
+                        <div class="flex flex-col gap-12">
+                            <div class="relative w-48 h-60">
+                                <img src="src/assets/images/Passport.jpeg" alt="" class="rounded-md shadow-md h-full w-full object-cover"> 
+                                <div class="bg-gradient-to-t from-black via-transparent to-transparent inset-0 absolute rounded"></div>
+                                <div class="absolute bottom-2 left-3 text-sm">
+                                    <p class="text-white text-semibold">Abhishek</p>
+                                    <p class="text-white text-semibold">CEO</p>
+                                </div>
+                            </div>
+                            <div class="relative w-48 h-60">
+                                <img src="src/assets/images/94128239_2510328599229641_7688992968904015872_n.jpg" alt="" class="rounded-md shadow-md h-full w-full object-cover"> 
+                                <div class="bg-gradient-to-t from-black via-transparent to-transparent inset-0 absolute rounded"></div>
+                                <div class="absolute bottom-2 left-3 text-sm">
+                                    <p class="text-white text-semibold">Devendra</p>
+                                    <p class="text-white text-semibold">CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-12 mt-12">
+                            <div class="relative w-48 h-60">
+                                <img src="src/assets/images/38867314_2078491569081741_3662034058830938112_n.jpg" alt="" class="rounded-md shadow-md h-full w-full object-cover"> 
+                                <div class="bg-gradient-to-t from-black via-transparent to-transparent inset-0 absolute rounded"></div>
+                                <div class="absolute bottom-2 left-3 text-sm">
+                                    <p class="text-white text-semibold">Ramveer</p>
+                                    <p class="text-white text-semibold">CEO</p>
+                                </div>
+                            </div>
+                            <div class="relative w-48 h-60">
+                                <img src="src/assets/images/WhatsApp Image 2023-01-08 at 4.49.56 PM.jpeg" alt="" class="rounded-md shadow-md h-full w-full object-cover"> 
+                                <div class="bg-gradient-to-t from-black via-transparent to-transparent inset-0 absolute rounded"></div>
+                                <div class="absolute bottom-2 left-3 text-sm">
+                                    <p class="text-white text-semibold">Jackson</p>
+                                    <p class="text-white text-semibold">CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-sm font-bold text-indigo-500 mb-1">OUR SUPPORT HEROES</p>
+                    <p class="text-4xl font-bold">MEET THE TEAM</p>
+                    <p class="mt-4">So we back in the club With our bodies rockin' from side to side Side, side to side Thank God the week is done I feel like a zombie gone back to life Back, back to life
+                        Hands up, and suddenly we all got our hands up No control of my body Ain't I seen you before? I think I remember those eyes, eyes, eyes. Eyes, eyes, eyes
+                        Cause baby tonight The DJ got us fallin' in love again (love again) Yeah, baby tonight The DJ got us fallin' in love again (l-love again, again)
+                    </p>
+                    <p>
+                        Swear I seen you before think I remember those eyes, eyes, eyes, eyes Eyes.
+                    </p>
+                    <div class="mt-6">
+                        <button class="px-3 py-2 border-2 border-gray-500 font-semibold text-gray-500 shadow-md hover:shadow-lg hover:text-white hover:bg-gray-500 rounded-full">
+                            <span class="material-symbols-outlined align-middle mr-1">group</span>
+                            Meet Us
+                        </button>
+                        <button class="px-3 py-2 border-2 border-blue-700 bg-blue-600 font-semibold text-white shadow-md hover:shadow-lg hover:text-white hover:bg-blue-800 rounded-full">
+                            <span class="material-symbols-outlined align-middle mr-1">lightbulb</span>
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white py-36 relative z-10">
+        <div class="bg-slate-50 w-8/12 -z-10 top-16 bottom-0 right-0 rounded-tl-3xl absolute"></div>
+        <div class="w-9/12 mx-auto">
+            <div class="mb-20">
+                <p class="text-5xl font-bold text-gray-500 w-5/12">What Our Customers Are Saying</p> 
+            </div>
+            <div class="flex">
+                <div class="w-1/2">
+                    <div class="h-70 w-10/12 relative mb-4">
+                        <div class="dot-pattern opacity-30 h-48 w-32 absolute -top-24 -left-16 -z-10"></div>
+                        <div class="dot-pattern opacity-30 h-48 w-32 absolute -bottom-24 -right-16 -z-10"></div>
+                        <div class="absolute z-10 -top-6 -right-6">
+                            <div class="h-10 w-10 rounded-full bg-indigo-600 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-4xl text-white align-middle">format_quote</span>
+                            </div>
+                        </div>
+                        <img src="src/assets/images/testimonials/testimonial-2.jpg" alt="" class="w-full h-full rounded-md shadow-md object-cover">
+                        
+                    </div>
+                    <div class="flex gap-3">
+                        <button class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-amber-500 shadow hover:shadow-lg">
+                            <span><span class="material-symbols-outlined align-middle text-white">chevron_left</span></span>
+                        </button>
+                        <button class="flex items-center justify-center h-10 w-10 p-2 rounded-full bg-amber-500 shadow hover:shadow-lg">
+                            <span><span class="material-symbols-outlined align-middle text-white">chevron_right</span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-1/2 text-gray-500">
+                    <p class="text-xl font-semibold mb-3">Help Us Improve Our Productivity</p>
+                    <p class="mb-6">
+                        Dil mere tu hai ek nakara
+                        maane naa tu kyun kismat ka maara   
+                        na pagal nadan dhunde jinke
+                        na paya soone bin raste un
+                        baazaaron me dil ke firta aawaara
+                        jhootha dil jhootha hai ye jag saara
+                        hai badnaam ab wo pal mere
+                        guzre the jo kal me tere
+                        kirdaaron me uljha uljha jag sara
+                        gardish me chamke wo toota taara
+                    </p>
+                    <p class="font-bold text-lg">Local Train</p>
+                    <p>Lead Music Band</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bg-sky-50 py-36">
+        <div class="w-9/12 mx-auto rounded-xl shadow-lg relative">
+            <img src="src/assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg" alt="" class="h-[42rem] w-full object-cover rounded-xl">
+            <div class="bg-black/70 h-full inset-0 absolute hover:bg-black/70"></div>
+            <div class=" absolute right-8 left-8 top-24">
+                <div class="flex items-end">
+                    <div class="w-1/2 text-gray-100">
+                        <div class="mb-5">
+                            <p class="font-bold text-4xl">Find Us</p>
+                            <div class="flex gap-6 mt-1">
+                                <div>
+                                    <p class="text-2xl font-bold">New York</p>
+                                    <p class="text-sm"> Derrick Street Boston, MA 02130 USA</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold">Paris</p>
+                                    <p class="text-sm"> Derrick Street Boston, MA 02130 USA</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold">Delhi</p>
+                                    <p class="text-sm"> Derrick Street Boston, MA 02130 USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w-1/2">
+                        <div class="bg-white max-w-lg p-6 ml-auto rounded-md space-y-6">
+                            <div class="text-gray-600">
+                                <p class="text-4xl font-bold mb-4">Get In Touch</p>
+                                <p>Need help or have some feedback for us?</p>
+                                <p>Fill out the given form below to contact our team</p>
+                            </div>
+                            <form action="" class="space-y-4">
+                                <div class="flex text-gray-600 gap-6">
+                                    <div class="text-gray-600">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" placeholder="Abhishek" class="py-2 px-3 border rounded-md mt-0.5 w-full" id="first-name">
+                                    </div>
+                                    <div class="text-gray-600">
+                                        <label for="last-name">Last Name</label>
+                                        <input type="text" placeholder="Verma" class="py-2 px-3 border rounded-md mt-0.5 w-full" id="last-name">
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="text-gray-600">
+                                        <label for="email">Email</label>
+                                        <input type="text" placeholder="mail@email.com" class="py-2 px-3 border rounded-md mt-0.5 w-full" id="email">
+                                    </div>
+                                    <div class="text-gray-600">
+                                        <label for="message">Message</label>
+                                        <textarea name="" id="message" rows="4" placeholder="Good Job! I only have this question" class="py-2 px-3 row-span-4 border rounded-md mt-0.5 w-full"></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="py-2 px-3 bg-indigo-600 text-white shadow-lg hover:bg-indigo-500 hover:shadow-xl">
+                                        <span class="material-symbols-sharp align-middle mr-1">local_shipping</span>
+                                        Get In Touch
+                                    </button>
+                                </div>
+                            </form>
+
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-white border-t py-24">
+        <div class="w-9/12 mx-auto">
+            <div class="flex justify-between">
+                <div>
+                    <p class="text-base font-bold">COMPANY</p>
+                    <div class="text-gray-600">
+                        <p>Who we are</p>
+                        <p>Contact Us</p>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-base font-bold">BUSINESS</p>
+                    <div class="text-gray-600">
+                        <p>Claim Business</p>
+                        <p>Advertise</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-base font-bold">COMPANY</p>
+                    <div class="text-gray-600">
+                        <p>Who we are</p>
+                        <p>Contact Us</p>
+                        <p>Support</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Conditions</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">FOLLOW US</p>
+                    <div class="flex gap-2 py-2">
+                        <a href="">
+                            <img src="src/assets/images/icons/fb.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/assets/images/icons/tr.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/assets/images/icons/tg.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/assets/images/icons/ig.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12">
+                <p class="text-gray-500 text-sm">2023 © beshek. All rights not reserved</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    window.addEventListener("scroll",listenScroll);
+
+    function listenScroll(){    
+        const navbar = document.querySelector(".navbar");
+        const heroHeader = document.querySelector(".hero-header")
+        const referencePassed = (window.scrollY + heroHeader.getBoundingClientRect().height) > heroHeader.offsetTop;
+        const navClassNames = referencePassed ? ['transparent-nav','bg-nav']:['bg-nav','transparent-nav']
+        navbar.classList.replace(...navClassNames);
+    
+        const bannerDimension = document.querySelector(".hero-banner").getBoundingClientRect();
+        const bannerPassed = bannerDimension.top + bannerDimension.height <=38;
+        const navTextColor = bannerPassed ? ['text-white','text-gray-700']:['text-gray-700','text-white'];
+        navbar.classList.replace(...navTextColor);
+    }
+    listenScroll();
+</script>
+</body>
+</html>
